@@ -6,7 +6,41 @@
   "author": "info@punkbit.com",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "stylus": "^0.54.7"
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@rollup/plugin-babel": "^5.0.4",
+    "@rollup/plugin-html": "^0.2.0",
+    "@rollup/plugin-node-resolve": "^8.1.0",
+    "rollup": "^2.20.0",
+    "stylus": "^0.54.7",
+    "typescript": "^3.9.6"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-typescript"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      "last 3 chrome version",
+      "last 3 firefox version"
+    ]
+  },
+  "engines": {
+    "node": ">=10.16.0",
+    "npm": ">=6.9.0"
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "watch:type-check": "yarn type-check -- --watch",
+    "watch:stylus": "npx stylus -w ./src/main.styl -o ./lib/main.css",
+    "watch:build": "npx stylus ./src/main.styl -o ./lib/main.css",
+    "watch": "npx babel --watch ./src --out-dir ./lib --extensions '.ts'",
+    "build:js": "npx babel ./lib --out-dir ./lib --source-maps inline",
+    "bundle": "rollup -c"
   }
 }
