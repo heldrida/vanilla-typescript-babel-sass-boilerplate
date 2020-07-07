@@ -1,0 +1,12 @@
+{
+  "name": "iproov-web-sdk",
+  "version": "0.0.1",
+  "description": "The goal for this project is to guide the user to correctly align their face to the webcam",
+  "main": "index.ts",
+  "author": "info@punkbit.com",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "stylus": "^0.54.7"
+  }
+}
