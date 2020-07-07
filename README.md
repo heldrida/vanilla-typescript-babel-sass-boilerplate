@@ -24,8 +24,7 @@
 
   ### To get started
 
-  Assuming that you have Nodejs and NPM/Yarn installed on your system, we use Yarn as an example but feel free to stick with NPM; 
-  You should proceed by running the commands listed bellow.
+  Assuming that you have Nodejs and NPM/Yarn installed on your system (for the CLI, Bash scripts, this was developed in MacOS, so if running under windows make sure you use WSL - but it was not tested); Bellow, we use Yarn as an example but feel free to stick with NPM; You should proceed by running the commands listed bellow.
 
   Before proceeding, you should instal the dependencies for the project:
 
@@ -45,15 +44,8 @@
   yarn build
   ```
 
-  The project is version controlled using a feature branch strategy. Feel free to look into the project history using the git log and checking out
-  to the commit history.
-
   ### Release notes
 
-  - Since we're looking into an SDK, we'll not use any third-party libraries such as React/VUE/Angular. For a test I believe this should be alright
-  and would speed up development, as I'd avoid having to workout the boilerplate code. But, I'll take the time to create a minimal boilerplate for
-  Typescript and a CSS pre-processor;
-  - The boilerplate will have a development mode, that should have a live reload feature. Noticed that for the past 5 years there aren't any new libraries that solves this problem, so I went back and use a library that I was familiar with called browser-sync which hasn't been updated for some time now, but
-  does the trick;
+  - Since we're looking into an SDK, we'll not use any third-party libraries such as React/VUE/Angular. Otherwise, that would speed up development, as I'd avoid having to workout the boilerplate code. But, I took the time to create a minimal boilerplate for Typescript and a CSS pre-processor;
+  - The boilerplate will have a development mode, that should have a live reload feature, the project package name and version;
   - I've decided to use the `stylus` as a css pre-processor, but any would do. Opted for this one for its simplicity and no semicolons, etc;
-  
