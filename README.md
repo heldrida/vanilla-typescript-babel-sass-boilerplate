@@ -3,7 +3,7 @@
   
   The goal for this project is to guide the user to correctly align their face to the webcam.
 
-  ### The requirements are:
+  ## The requirements are:
 
   - A CTA to request access to the user webcam through the getUserMedia, supporting modern Chrome and Firefox;
   - Display a mirrored view of the webcam video to the user
@@ -22,7 +22,7 @@
    > Apply a filter or shader to the video feed's display
 
 
-  ### To get started
+  ## To get started
 
   Assuming that you have Nodejs and NPM/Yarn installed on your system (for the CLI, Bash scripts, this was developed in MacOS, so if running under windows make sure you use WSL - but it was not tested); Bellow, we use Yarn as an example but feel free to stick with NPM; You should proceed by running the commands listed bellow.
 
@@ -44,7 +44,7 @@
   yarn build
   ```
 
-  ### Release notes
+  ## Release notes
 
   - Since we're looking into an SDK, we'll not use any third-party libraries such as React/VUE/Angular. Otherwise, that would speed up development, as I'd avoid having to workout the boilerplate code. But, I took the time to create a minimal boilerplate for Typescript and a CSS pre-processor;
   - The boilerplate will have a development mode, that should have a live reload feature, the project package name and version;
