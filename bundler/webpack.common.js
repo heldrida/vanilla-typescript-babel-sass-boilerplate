@@ -35,4 +35,7 @@ const config = {
   }
 }
 
-module.exports = config
+module.exports = env => {
+  // passes env variable to config
+  return config
+}

@@ -44,6 +44,6 @@
     "watch": "npx babel --watch ./src --out-dir ./lib --extensions '.ts'",
     "build:js": "npx babel ./lib --out-dir ./lib --source-maps inline",
     "build:css": "./bin/css-builder.sh",
-    "build:bundler": "npx webpack --progress --colors --config ./bundler/webpack.common.js"
+    "build:bundler": "npx webpack --env.NODE_ENV=production --progress --colors --config ./bundler/webpack.common.js"
   }
 }
