@@ -11,12 +11,15 @@
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-typescript": "^7.10.4",
-    "@rollup/plugin-babel": "^5.0.4",
-    "@rollup/plugin-html": "^0.2.0",
-    "@rollup/plugin-node-resolve": "^8.1.0",
-    "rollup": "^2.20.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "csso-cli": "^3.0.0",
+    "html-webpack-plugin": "^4.3.0",
     "stylus": "^0.54.7",
-    "typescript": "^3.9.6"
+    "stylus-loader": "^3.0.2",
+    "typescript": "^3.9.6",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
   },
   "babel": {
     "presets": [
@@ -37,10 +40,10 @@
   "scripts": {
     "type-check": "tsc --noEmit",
     "watch:type-check": "yarn type-check -- --watch",
-    "watch:stylus": "npx stylus -w ./src/main.styl -o ./lib/main.css",
-    "watch:build": "npx stylus ./src/main.styl -o ./lib/main.css",
+    "watch:stylus": "npx stylus -w ./src/styles/entry.styl -o ./static/css/main.css",
     "watch": "npx babel --watch ./src --out-dir ./lib --extensions '.ts'",
     "build:js": "npx babel ./lib --out-dir ./lib --source-maps inline",
-    "bundle": "rollup -c"
+    "build:css": "./bin/css-builder.sh",
+    "build:bundle": "npx webpack ./src/index.ts"
   }
 }
