@@ -1,3 +1,6 @@
+  <div align="center">
+    <img src="https://github.com/heldrida/vanilla-typescript-babel-sass-boilerplate/raw/master/static/images/logo.jpg?202007081547" width="100" height="auto"/>
+  </div>
 
   # Vanilla Typescript+Babel+Sass Boilerplate
   
