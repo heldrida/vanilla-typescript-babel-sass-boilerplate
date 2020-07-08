@@ -1,7 +1,5 @@
-import { sayHello } from './test'
+import createNode from './sdk/moduleA'
 
-function HelloWorld(message: string): string {
-  return sayHello(message)
-}
-
-export default HelloWorld
+(() => {
+  createNode()
+})()

@@ -19,7 +19,9 @@
     "stylus-loader": "^3.0.2",
     "typescript": "^3.9.6",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.0.8"
   },
   "babel": {
     "presets": [
@@ -38,12 +40,10 @@
     "npm": ">=6.9.0"
   },
   "scripts": {
-    "type-check": "tsc --noEmit",
-    "watch:type-check": "yarn type-check -- --watch",
-    "watch:stylus": "npx stylus -w ./src/styles/entry.styl -o ./static/css/main.css",
-    "watch": "npx babel --watch ./src --out-dir ./lib --extensions '.ts'",
-    "build:js": "npx babel ./lib --out-dir ./lib --source-maps inline",
+    "watch:stylus": "mkdir -p ./build/static/css && npx stylus -w ./src/styles/entry.styl -o ./dist/static/css/main.css",
     "build:css": "./bin/css-builder.sh",
-    "build:bundler": "npx webpack --env.NODE_ENV=production --progress --colors --config ./bundler/webpack.common.js"
+    "build:js": "npx webpack --env.NODE_ENV=production --progress --colors --config ./bundler/webpack.common.js",
+    "build": "npm run build:js && npm run build:css",
+    "start:webpack-dev-server": "npx webpack-dev-server --env.NODE_ENV=development --progress --colors --config ./bundler/webpack.common.js"
   }
 }

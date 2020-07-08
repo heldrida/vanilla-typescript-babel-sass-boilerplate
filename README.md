@@ -32,20 +32,34 @@
   yarn install
   ```
 
-  Start the development environment:
+  For development there are two main options, one for the main source-code and the second stylesheets, as follows:
 
   ```bash
-  yarn start
+  yarn start:webpack-dev-server
   ```
 
-  Build the distribution version for production by:
+  ```bash
+  yarn watch:stylus
+  ```
+
+  Build the distribution version for production by running:
 
   ```bash
   yarn build
   ```
 
+  This will output to the `dist` directory:
+
+  ```txt
+  /dist
+    /iproov-web-sdk
+      /versionX
+          /css/main.min.css
+          /js/main.min.js 
+  ```
+
   ## Release notes
 
-  - Since we're looking into an SDK, we'll not use any third-party libraries such as React/VUE/Angular. Otherwise, that would speed up development, as I'd avoid having to workout the boilerplate code. But, I took the time to create a minimal boilerplate for Typescript and a CSS pre-processor;
+  - Since we're looking into an SDK, we'll not use any third-party libraries such as React/VUE/Angular. That would help speed up development, as I wouldn't have to worko in the boilerplate code. So, I took the time to create a minimal boilerplate for Typescript and a CSS pre-processor;
   - The boilerplate will have a development mode, that should have a live reload feature, the project package name and version;
   - I've decided to use the `stylus` as a css pre-processor, but any would do. Opted for this one for its simplicity and no semicolons, etc;
