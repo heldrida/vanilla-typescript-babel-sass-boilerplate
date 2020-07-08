@@ -1,5 +1,7 @@
-import createNode from './sdk/moduleA'
+import createNode from './sdk/Example'
+import './styles/entry.sass'
+
 
 (() => {
-  createNode()
+  createNode('testzz')
 })()
