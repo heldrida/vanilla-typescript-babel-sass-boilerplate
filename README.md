@@ -34,3 +34,7 @@
           /css/main.min.css
           /js/main.min.js 
   ```
+
+  ## License
+
+  Licensed under [WTFPL](http://www.wtfpl.net/)
