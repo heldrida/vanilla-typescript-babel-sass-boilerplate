@@ -1,26 +1,7 @@
 
-  # iProov Web SDK: Align user face
+  # Vanilla Typescript+Babel+Sass boilerplate
   
-  The goal for this project is to guide the user to correctly align their face to the webcam.
-
-  ## The requirements are:
-
-  - A CTA to request access to the user webcam through the getUserMedia, supporting modern Chrome and Firefox;
-  - Display a mirrored view of the webcam video to the user
-  - Draw a rectangle around any detected face's bounding box (for this particular solution, I'll compute a single user only)
-  - Use an external library to compute the face detection inside a webworker (tensorflow for senior devs)
-  - Provide instructions to the endu ser based on the following detected states:
-   > Align face, if no face is found
-   > Move left or right, accordingly, when the face is aligned 20% in the opposite direction
-   > Come close, when the face is less than 40% of the video view
-   > Ready, if none of the above
-  - Nice to have's (not mandatory)
-   > The webcam should open in fullscreen and centered
-   > Smooth detection inaccuracies that cause instruction jitter at the edge of face states
-   > Overlay the instructions on the video with an oval shape indicating the correct face position
-   > Gracefully handle webcam errors, such as "no camera detected" and "permission denied"
-   > Apply a filter or shader to the video feed's display
-
+  A Boilerplate for vanilla Typescript projects, transpiled by Babel and styled with Sass.
 
   ## To get started
 
@@ -32,14 +13,10 @@
   yarn install
   ```
 
-  For development there are two main options, one for the main source-code and the second stylesheets, as follows:
+  For development:
 
   ```bash
-  yarn start:webpack-dev-server
-  ```
-
-  ```bash
-  yarn watch:stylus
+  yarn start:dev
   ```
 
   Build the distribution version for production by running:
@@ -52,14 +29,8 @@
 
   ```txt
   /dist
-    /iproov-web-sdk
+    /project-name
       /versionX
           /css/main.min.css
           /js/main.min.js 
   ```
-
-  ## Release notes
-
-  - Since we're looking into an SDK, we'll not use any third-party libraries such as React/VUE/Angular. That would help speed up development, as I wouldn't have to worko in the boilerplate code. So, I took the time to create a minimal boilerplate for Typescript and a CSS pre-processor;
-  - The boilerplate will have a development mode, that should have a live reload feature, the project package name and version;
-  - I've decided to use the `stylus` as a css pre-processor, but any would do. Opted for this one for its simplicity and no semicolons, etc;

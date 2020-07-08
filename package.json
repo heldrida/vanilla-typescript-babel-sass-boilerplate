@@ -1,7 +1,7 @@
 {
-  "name": "iproov-web-sdk",
+  "name": "vanilla-typescript-babel-sass-boilerplate",
   "version": "0.0.2",
-  "description": "The goal for this project is to guide the user to correctly align their face to the webcam",
+  "description": "A Boilerplate for vanilla Typescript projects, transpiled by Babel and styled with Sass",
   "main": "index.ts",
   "author": "info@punkbit.com",
   "license": "MIT",
@@ -50,6 +50,6 @@
   "scripts": {
     "build:js": "npx webpack --env.NODE_ENV=production --progress --colors --config ./bundler/webpack.common.js",
     "build": "npm run build:js",
-    "start:webpack-dev-server": "npx webpack-dev-server --env.NODE_ENV=development --progress --colors --config ./bundler/webpack.common.js"
+    "start:dev": "npx webpack-dev-server --env.NODE_ENV=development --progress --colors --config ./bundler/webpack.common.js"
   }
 }
