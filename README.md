@@ -1,5 +1,5 @@
   <div align="center">
-    <img src="https://github.com/heldrida/vanilla-typescript-babel-sass-boilerplate/raw/master/static/images/logo.jpg?202007081547" width="100" height="auto"/>
+    <img src="https://github.com/heldrida/vanilla-typescript-babel-sass-boilerplate/raw/master/static/images/logo.png?202007081552" width="142" height="auto"/>
   </div>
 
   # Vanilla Typescript+Babel+Sass Boilerplate
