@@ -1,9 +1,9 @@
 
-  # Vanilla Typescript+Babel+Sass boilerplate
+  # Vanilla Typescript+Babel+Sass Boilerplate
   
   A Boilerplate for vanilla Typescript projects, transpiled by Babel and styled with Sass.
 
-  ## To get started
+  ## Get started
 
   Assuming that you have Nodejs and NPM/Yarn installed on your system (for the CLI, Bash scripts, this was developed in MacOS, so if running under windows make sure you use WSL - but it was not tested); Bellow, we use Yarn as an example but feel free to stick with NPM; You should proceed by running the commands listed bellow.
 
