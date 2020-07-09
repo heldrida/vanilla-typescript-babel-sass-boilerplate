@@ -28,6 +28,14 @@
   yarn build
   ```
 
+  Run test watcher:
+
+  ```bash
+  yarn test
+  ```
+
+  Create `.spec.ts` files in the `/src` directory
+
   This will output to the `dist` directory:
 
   ```txt
